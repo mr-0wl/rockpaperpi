@@ -1,4 +1,5 @@
 import random
+import time 
 
 # rock beats scissors, scissors beat paper, paper beats rock
 
@@ -12,7 +13,14 @@ def machine():
     return aichoice
 
 def running():
-    print "Rock Paper Scissors"
+    print "Rock"
+    time.sleep(0.5)
+    print "paper"
+    time.sleep(0.5)
+    print "scissors"
+    time.sleep(0.5)
+    print "choose your throw"
+    time.sleep(0.5)
     print "Type 1 for Rock"
     print "Type 2 for paper"
     print "Type 3 for scissors"
@@ -44,7 +52,17 @@ def running():
         print "computer throws Scissors"
         print "lose"
     elif playerchoose == "3" and machinechoose == 1:
-        print "
+        print "you thorw scissors"
+        print "computer throws Rock"
+        print "lose"
+    elif playerchoose == "3" and machinechoose == 2:
+        print "you throw scissors"
+        print "computer throws paper"
+        print "win"
+    elif playerchoose == "3" and machinechoose == 3:
+        print "you throw scissors"
+        print "machine throws scissors"
+        print "tie"
 
     else:
         print "Not valid choice, please try again"
