@@ -31,6 +31,23 @@ def running():
         print "you throw Rock"
         print "computer throws Scissors"
         print "win"
+    elif playerchoose == "2" and machinechoose == 1:
+        print "you throw paper"
+        print "computer throws Rock"
+        print "Win"
+    elif playerchoose == "2" and machinechoose == 2:
+        print "you throw paper"
+        print "computer throws paper"
+        print "tie"
+    elif playerchoose == "2" and machinechoose == 3:
+        print "you throw paper"
+        print "computer throws Scissors"
+        print "lose"
+    elif playerchoose == "3" and machinechoose == 1:
+        print "
+
+    else:
+        print "Not valid choice, please try again"
 
 play = raw_input("play a round? y or n > ")
 
@@ -44,4 +61,4 @@ while play == "y":
         play = "n"
     else:
         print "invalid, please type 'y' or 'n'"
-        print "starting a new round"
+        raw_input("press enter to start over")
